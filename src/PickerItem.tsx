@@ -11,7 +11,7 @@ export interface PickerItemProps {
 
 export const PickerItem = ({ color, label, ...props }: PickerItemProps) => {
   return (
-    <Text style={{ color }} {...props}>
+    <Text style={[{ color }, props.textStyle]} {...props}>
       {label}
     </Text>
   );
